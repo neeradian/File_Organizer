@@ -1,7 +1,7 @@
 # File Organizer
 
 <div align="center">
-<img src="./assets/img/Sample Page.png"/>
+    <img width="80%" src="./assets/img/Sample Page.png"/>
 </div>
 
 A simple desktop file organizer built with **Python**, **CustomTkinter**, and a collection of custom JSON themes from **CTkThemesPack**.
@@ -211,18 +211,15 @@ Please review the original repository's license and attribution requirements whe
 
 ## 📜 License
 
-This README documents the application based on its current source code. Add the project's own license here if you have selected one.
+This project is licensed under the [MIT License](LICENSE).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Third-party components and theme files remain subject to their respective licenses and terms.
 
 ## 👤 Author
 
-
 <a href="https://github.com/neeradian">
-<img src="https://github.com/neeradian.png" width="50" height="50" style="border-radius:50%;">
+    <img src="https://github.com/neeradian.png" width="50" height="50" style="border-radius:50%;">
 </a>
 
 Created and developed by [Nimesh Mandal](https://github.com/neeradian)
-
-
-A lightweight desktop utility for organizing files by type using a modern CustomTkinter interface.
