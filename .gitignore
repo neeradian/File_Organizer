@@ -1,6 +1,18 @@
+# Ignore the virtual environment folder
 .venv
 
+# Ignore the .vscode folder
 .vscode
 
+# Ignore the __pycache__ folder
 __pycache__
 
+# Ignore the .idea folder
+.idea
+
+# Ignore the build and dist folders
+build/
+dist/
+
+# Ignore the  pyinstaller spec file
+*.spec

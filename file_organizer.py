@@ -1,7 +1,9 @@
 import os
+import sys
 import shutil
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
+
 
 # ============================================================
 # FILE CATEGORIES
@@ -250,6 +252,19 @@ THEMES = {
 ctk.set_appearance_mode("System")
 ctk.set_default_color_theme("blue")
 
+# ============================================================
+# RESOURCE PATH FUNCTION FOR LOGO 
+# ============================================================
+
+def resource_path(relative_path):
+    """Get the correct path for development and PyInstaller."""
+    if getattr(sys, "frozen", False):
+        base_path = sys._MEIPASS
+    else:
+        base_path = os.path.dirname(os.path.abspath(__file__))
+
+    return os.path.join(base_path, relative_path)
+
 
 # ============================================================
 # FILE ORGANIZER APP
@@ -265,6 +280,7 @@ class FileOrganizerApp(ctk.CTk):
         self.geometry("700x500")
         self.minsize(600, 450)
         self.resizable(False, False)
+        self.iconbitmap(resource_path("assets/logo.ico"))
 
         self.source_folder = ""
         self.destination_folder = ""
